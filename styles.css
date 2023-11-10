@@ -15,16 +15,16 @@ body {
 /* HEADER STYLES */
 /* Style for header element with dark background and horizontal padding */
 header {
-  background-color: #4d626c; /* Dark grey background */
+  background-color: #1f2937; /* Dark grey background */
   padding: 1em 13em; /* Vertical and horizontal padding */
 }
 
 /* NAVIGATION STYLES */
 /* Style for the logo, with increased font size and bold weight */
 #logo {
-  width: 100px; /* Adjust width as needed */
-  height: auto; /* Keep the aspect ratio */
-  /* You can add other styles like margin or padding if needed */
+  font-size: 24px; /* Large font size for logo */
+  font-weight: 900; /* Bold font weight */
+  color: #f9faf8; /* Light color for contrast */
 }
 
 /* Style for navigation bar with flexbox for layout */
