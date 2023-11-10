@@ -1,0 +1,210 @@
+/* Importing Roboto font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* Universal selector to remove default margin and padding from all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body style to set default font */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER STYLES */
+/* Style for header element with dark background and horizontal padding */
+header {
+  background-color: #4d626c; /* Dark grey background */
+  padding: 1em 13em; /* Vertical and horizontal padding */
+}
+
+/* NAVIGATION STYLES */
+/* Style for the logo, with increased font size and bold weight */
+#logo {
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Keep the aspect ratio */
+  /* You can add other styles like margin or padding if needed */
+}
+
+/* Style for navigation bar with flexbox for layout */
+.nav {
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between; /* Spreads items evenly with space in between */
+  align-items: baseline; /* Aligns items along their baselines */
+}
+/* Style for navigation bar's unordered list */
+.nav ul {
+  list-style-type: none; /* Removes default list styling */
+  display: flex; /* Enables flexbox layout */
+  gap: 1.5em; /* Space between each list item */
+}
+
+/* Style for secondary navigation items and unvisited links */
+.secondary,
+a:link {
+  font-size: 18px; /* Slightly larger font size for readability */
+  color: #e5e7eb; /* Light grey color for contrast */
+  text-decoration: none; /* Removes underline from links */
+}
+
+/* WELCOME SECTION STYLES */
+/* Style for welcome section with flexbox centering */
+.welcome {
+  padding: 7em 0; /* Vertical padding */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+  gap: 2em; /* Space between flex items */
+}
+
+/* Style for left part of the welcome section */
+.welcome .left {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks children vertically */
+  gap: 10px; /* Space between each child element */
+}
+
+/* Style for right part of the welcome section */
+.welcome .right {
+  flex-shrink: 0; /* Prevents shrinking below its content size */
+  width: 50%; /* Takes up half of the parent's width */
+}
+
+/* Style for hero text in the welcome section */
+.hero {
+  color: #f9faf8; /* Light color for contrast */
+  font-weight: 900; /* Bold font weight */
+  font-size: 48px; /* Large font size for emphasis */
+}
+
+/* General button style with padding, width, background, and border radius */
+button {
+  padding: 7px 1em; /* Vertical and horizontal padding */
+  width: 120px; /* Fixed width */
+  background-color: #3882f6; /* Blue background color */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Additional button style specific to the welcome section */
+.welcome button {
+  border: none; /* Removes default border */
+}
+
+/* Style for image container in the welcome section */
+.image {
+  background-color: gray; /* Gray background as a placeholder */
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Vertically centers content */
+  justify-content: center; /* Horizontally centers content */
+  height: 215px; /* Fixed height */
+}
+/* CARD SECTION STYLES */
+/* Style for the main section with flexbox for layout and alignment */
+main {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers children horizontally */
+  padding: 0 13em; /* Horizontal padding */
+  margin-top: 3em; /* Space above the section */
+}
+
+/* Style for headings within the main section */
+main h2 {
+  font-size: 36px; /* Large font size for headings */
+  font-weight: 900; /* Bold weight for emphasis */
+  color: #1f2937; /* Dark grey color for contrast */
+}
+
+/* Style for the container holding cards with flexbox and wrapping */
+.card-container {
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+  flex-wrap: wrap; /* Allows items to wrap to next line */
+  margin: 3em 0 6em 0; /* Vertical margins */
+}
+
+/* Style for individual cards with text alignment and flexbox */
+.card {
+  text-align: center; /* Centers text horizontally */
+  max-width: 200px; /* Maximum width of cards */
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers children horizontally */
+  gap: 0.5em; /* Space between each child element */
+}
+
+/* Style for square elements within cards */
+.square {
+  border: 4px solid #3882f6; /* Blue border */
+  border-radius: 20px; /* Rounded corners */
+  width: 160px; /* Fixed width */
+  height: 160px; /* Fixed height */
+}
+
+/* QUOTE SECTION STYLES */
+/* Style for the quote section with flexbox for layout */
+.quote {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks children vertically */
+  justify-content: center; /* Centers children horizontally */
+  background-color: #e5e7eb; /* Light grey background */
+  padding: 7em 13em; /* Padding around the content */
+}
+
+/* Style for paragraphs within the quote section */
+.quote p {
+  align-self: flex-end; /* Aligns to the end of the flex container */
+  font-weight: bolder; /* Bold font weight */
+  font-size: 24px; /* Larger font size */
+  color: #1f2937; /* Dark grey color for contrast */
+}
+
+/* Style for emphasized text within the quote section */
+.quote em {
+  font-size: 36px; /* Larger font size for emphasis */
+  font-weight: 100; /* Light font weight */
+  color: #1f2937; /* Dark grey color for contrast */
+}
+/* SIGN UP SECTION STYLES */
+/* Style for the sign-up section with flexbox for layout and alignment */
+.sign-up {
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+  padding: 5em 13em; /* Padding around the content */
+}
+
+/* Style for the container within the sign-up section */
+.container {
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-around; /* Distributes children with space around them */
+  align-items: center; /* Centers children vertically */
+  background-color: #3882f6; /* Blue background color */
+  padding: 3em; /* Padding inside the container */
+  width: 100%; /* Full width of the parent element */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style for buttons within the container of the sign-up section */
+.container button {
+  border: 2px solid #fff; /* White border for buttons */
+}
+
+/* Style for strong elements to enhance certain text */
+strong {
+  font-size: 24px; /* Larger font size for emphasis */
+  color: #fff; /* White color for contrast */
+}
+
+/* FOOTER STYLES */
+/* Style for the footer with flexbox for layout and alignment */
+footer {
+  background-color: #1f2937; /* Dark grey background */
+  color: #fff; /* White text for contrast */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+  padding: 2em 0; /* Vertical padding */
+}
